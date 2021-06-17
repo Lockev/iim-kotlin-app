@@ -1,5 +1,7 @@
 package com.example.iim_a3_s1_1
 
+import android.content.Context
+import android.content.res.Resources
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.g123k.ilv.Product
@@ -36,12 +39,11 @@ class MainActivity : AppCompatActivity() {
 
         // recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = GridLayoutManager(this, 1)
-        recyclerView.adapter = ListAdapter(products)
-
+        recyclerView.adapter = ListAdapter(products, this)
     }
 }
 
-class ListAdapter(val data: Array<Product>) : RecyclerView.Adapter<ListCell>() {
+class ListAdapter(val data: Array<Product>, val context: Context) : RecyclerView.Adapter<ListCell>() {
 
     override fun getItemCount(): Int = data.size
 
@@ -55,13 +57,16 @@ class ListAdapter(val data: Array<Product>) : RecyclerView.Adapter<ListCell>() {
     override fun onBindViewHolder(holder: ListCell, position: Int) {
         val item = data[position]
 
-        val imgURL = "@mipmap/nutri_score_" + item.nutriscore.label.lowercase()
+        val imgURL = "nutri_score_" + item.nutriscore.label.lowercase()
         println(imgURL)
 
         holder.line1.text = item.name
         holder.line2.text = item.thumbnail
 
-        //holder.nutriscore.setImageDrawable(R.drawable.imgURL)
+        val r: Resources = context.resources
+        val drawableId: Int = r.getIdentifier(imgURL, "mipmap", "com.example.iim_a3_s1_1")
+
+        holder.nutriscore.setImageDrawable(ContextCompat.getDrawable(context, drawableId))
     }
 }
 
