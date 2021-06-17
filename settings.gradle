@@ -1,0 +1,2 @@
+rootProject.name = "iim-a3-s1-1"
+include ':app'

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/recipe_text_code"
+        android:id="@+id/recipe_id" />
+
+    <include
+        layout="@layout/recipe_text_quantity"
+        android:id="@+id/recipe_quantity" />
+
+    <include
+        layout="@layout/recipe_text_location"
+        android:id="@+id/recipe_location"/>
+
+    <include
+        layout="@layout/recipe_text_ingredients"
+        android:id="@+id/recipe_ingredients"/>
+
+    <include
+        layout="@layout/recipe_text_allergens"
+        android:id="@+id/recipe_allergens"/>
+
+    <include
+        layout="@layout/recipe_text_additives"
+        android:id="@+id/recipe_additives"/>
+
+
+</LinearLayout>

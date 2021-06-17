@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Mon comparateur</string>
+    <string name="recipe_title">Petits pois et carottes</string>
+    <string name="brand">Cassegrin</string>
+    <string name="recipe_id">Code barre : 3083680085304</string>
+    <string name="recipe_quantity">Quantité : 400g (280g net égoutté)</string>
+    <string name="recipe_location">Vendu en : France, Japon, Suisse</string>
+    <string name="recipe_ingredients">Ingredients : Petits pois 66%, eau, garniture 2.8% (salade, oignons grelot), sucre, sel, arôme naturel</string>
+    <string name="recipe_allergens">Substances allergènes : Aucune</string>
+    <string name="recipe_additives">Additifs : Aucun</string>
+
+</resources>
