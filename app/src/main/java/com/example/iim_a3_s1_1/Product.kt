@@ -1,5 +1,9 @@
-package com.g123k.ilv
+package com.example.iim_a3_s1_1
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
 data class Product(
     val name: String,
     val brand: String,
@@ -11,7 +15,7 @@ data class Product(
     val ingredients: List<String>,
     val allergens: List<String>,
     val additives: List<String>,
-)
+) : Parcelable
 
 enum class Nutriscore(val label: String) {
     A("A"), B("B"), C("C"), D("D"), E("E")

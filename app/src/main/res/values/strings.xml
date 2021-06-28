@@ -8,5 +8,8 @@
     <string name="recipe_ingredients">Ingredients : Petits pois 66%, eau, garniture 2.8% (salade, oignons grelot), sucre, sel, arôme naturel</string>
     <string name="recipe_allergens">Substances allergènes : Aucune</string>
     <string name="recipe_additives">Additifs : Aucun</string>
+    <string name="tab_nutrition">Nutrition</string>
+    <string name="tab_tableau">Tableau</string>
+    <string name="tab_fiche">Fiche</string>
 
 </resources>

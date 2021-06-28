@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/product_navigation_graph"
+    app:startDestination="@id/tab_fiche">
+
+    <fragment
+        android:id="@+id/tab_fiche"
+        android:name="com.example.iim_a3_s1_1.fragments.ProductsDetailsSummaryFragment"
+        android:label="ProductsDetailsSummaryFragment" />
+    <fragment
+        android:id="@+id/tab_nutrition"
+        android:name="com.example.iim_a3_s1_1.fragments.ProductsDetailsNutritionFragment"
+        android:label="ProductsDetailsNutritionFragment" />
+    <fragment
+        android:id="@+id/tab_tableau"
+        android:name="com.example.iim_a3_s1_1.fragments.ProductsDetailsNutritionalValuesFragment"
+        android:label="ProductsDetailsNutritionalValuesFragment" />
+
+</navigation>
